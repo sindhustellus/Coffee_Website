@@ -1,0 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meddon&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Playball&family=Poppins:wght@200;300;400;500;600&family=Roboto+Slab:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
