@@ -10,33 +10,46 @@ const Menu = () => {
             </div>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-10'>
-                <div className='overflow-hidden rounded-lg flex flex-col justify-center items-center lg:gap-2 gap-4'>
-                    <img src="/hot-beverages.png" alt="Hot Beverages" className='object-cover w-72 h-full' />
+                <div className='flex flex-col justify-center items-center lg:gap-2 gap-4'>
+                    <div className='flex cursor-pointer w-[300px] h-[270px]' >
+                        <img src="/hot-beverages.png" alt="Hot Beverages" className='object-cover w-full h-full  overflow-hidden' />
+
+                    </div>
                     <h4 className='font-bold text-white text-xl font-poppins'>Hot Beverages</h4>
                     <p className='text-md text-white w-[300px]'>Wide range of Steaming hot coffee to make you fresh and light.</p>
                 </div>
-                <div className=' overflow-hidden rounded-lg flex flex-col justify-center items-center lg:gap-2 gap-4'>
-                    <img src="/cold-beverages.png" alt="Cold Beverages" className='object-cover w-72 h-full' />
+                <div className='flex flex-col justify-center items-center lg:gap-2 gap-4'>
+                    <div className='flex cursor-pointer w-[300px] h-[300px]'>
+                        <img src="/cold-beverages.png" alt="Cold Beverages" className='object-cover w-full h-full overflow-hidden ' />
+                    </div>
                     <h4 className='font-bold text-white text-xl font-poppins'>Cold Beverages</h4>
                     <p className='text-md text-white w-[250px]'>Creamy and frothy cold coffee to make you cool.</p>
                 </div>
-                <div className='  overflow-hidden rounded-lg flex flex-col justify-center items-center lg:gap-2 gap-4'>
-                    <img src="/refreshment.png" alt="Refreshment" className='object-cover w-72 h-full' />
+                <div className='flex flex-col justify-center items-center lg:gap-2 gap-4'>
+                    <div className='flex cursor-pointer w-[300px] h-[300px]'>
+                        <img src="/refreshment.png" alt="Refreshment" className='object-cover w-full h-full overflow-hidden ' />
+                    </div>
                     <h4 className='font-bold text-white text-xl font-poppins'>Refreshment</h4>
                     <p className='text-md text-white w-[250px]'>Fruit and icy refreshment drink to make feel refresh</p>
                 </div>
-                <div className='  overflow-hidden rounded-lg flex flex-col justify-center items-center lg:gap-2 gap-4'>
-                    <img src="/special-combo.png" alt="Special Combo" className='object-cover w-72 h-full' />
+                <div className='flex flex-col justify-center items-center lg:gap-2 gap-4'>
+                    <div className='flex cursor-pointer w-[350px] h-[300px]'>
+                        <img src="/special-combo.png" alt="Special Combo" className='object-cover w-full h-full overflow-hidden' />
+                    </div>
                     <h4 className='font-bold text-white text-xl font-poppins'>Special Combo</h4>
                     <p className='text-md text-white w-[300px]'>A perfect blend of flavors crafted just for you – enjoy more, save more!.</p>
                 </div>
-                <div className=' overflow-hidden rounded-lg flex flex-col justify-center items-center lg:gap-2 gap-4'>
-                    <img src="/desserts.png" alt="Desserts" className='object-cover w-72 h-full' />
+                <div className='flex flex-col justify-center items-center lg:gap-2 gap-4'>
+                    <div className='flex cursor-pointer w-[300px] h-[300px]'>
+                        <img src="/desserts.png" alt="Desserts" className='object-cover w-full h-full overflow-hidden' />
+                    </div>
                     <h4 className='font-bold text-white text-xl font-poppins'>Desserts</h4>
                     <p className='text-md text-white w-[250px]'>Dive into decadence with our handcrafted desserts.</p>
                 </div>
-                <div className='  overflow-hidden rounded-lg flex flex-col justify-center items-center '>
-                    <img src="/burger-frenchfries.png" alt="Burger Frenchfries" className='object-cover w-72 h-full' />
+                <div className='flex flex-col justify-center items-center '>
+                    <div className='flex cursor-pointer w-[350px] h-[300px]'>
+                        <img src="/burger-frenchfries.png" alt="Burger Frenchfries" className='object-cover w-full h-full overflow-hidden' />
+                    </div>
                     <h4 className='font-bold text-white text-xl font-poppins'>Burger Frenchfries</h4>
                     <p className='text-md text-white w-[250px]'>Bite into bold flavor, served with golden perfection.</p>
                 </div>
