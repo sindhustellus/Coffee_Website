@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const About = () => {
+   useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div>
         <div id="about" className='bg-white lg:py-20 py-14'>
             <div className='flex lg:flex-row flex-col justify-between items-center lg:px-20 px-12'>
-                <div className='cursor-pointer w-[400px] h-[400px]  rounded-full overflow-hidden'>
+                <div className='cursor-pointer w-[400px] h-[400px]  rounded-full overflow-hidden' data-aos="fade-up-right">
                     <img src="/about-image.jpg" alt="about" className=' object-cover  w-full h-full ' />
                 </div>
                 <div className='lg:w-1/2 w-full h-full flex flex-col justify-center gap-4'>

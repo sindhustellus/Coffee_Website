@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Gallery = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+
+    },[]);
+
     const gallery = [
         '/gallery-1.jpg',
         '/gallery-2.jpg',
@@ -16,7 +24,7 @@ const Gallery = () => {
               <h2 className='border-warning border-b-4 lg:text-2xl text-xl font-bold font-poppins text-black lg:w-[100px] w-[80px]'>Gallery</h2>
 
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 sm:gap-10 gap-10 lg:px-40 px-28 py-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 sm:gap-10 gap-10 lg:px-40 px-28 py-10' data-aos="fade-down">
                 {gallery.map((image,index) =>(
                     <div key={index} className='rounded-lg overflow-hidden cursor-pointer w-[300px] h-[200px]'>
                         <img src={image} alt="Gallery" className='w-full h-full' />

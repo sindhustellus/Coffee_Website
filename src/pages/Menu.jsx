@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Menu = () => {
+    useEffect(() => {
+         AOS.init({ duration: 1000 });
+         
+    },[]);
+
   return (
     <div>
         <div id="menu" className='bg-dark shadow-xl'>
@@ -9,8 +17,8 @@ const Menu = () => {
 
             </div>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-10'>
-                <div className='flex flex-col justify-center items-center lg:gap-2 gap-4'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-10' data-aos="fade-right">
+                <div className='flex flex-col justify-center items-center lg:gap-2 sm:gap-6'>
                     <div className='flex cursor-pointer w-[300px] h-[270px]' >
                         <img src="/hot-beverages.png" alt="Hot Beverages" className='object-cover w-full h-full  overflow-hidden' />
 

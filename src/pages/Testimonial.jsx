@@ -1,5 +1,14 @@
-import React from 'react'
+import React ,{ useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 const Testimonial = () => {
+     useEffect(() => {
+             AOS.init({ duration: 1000 });
+             
+        },[]);
+  
     const client = [
         {
             img: '/user-4.jpg',
@@ -24,7 +33,7 @@ const Testimonial = () => {
             <h2 className='border-warning border-b-4 lg:text-2xl text-xl font-bold font-poppins text-black lg:w-[150px] w-[130px]'>Testimonial</h2>
 
         </div>
-        <div className='flex lg:flex-row flex-col justify-between items-center py-10 px-4 gap-6'>
+        <div className='flex lg:flex-row flex-col justify-between items-center py-10 px-4 gap-6' data-aos="flip-left">
           {client.map((user,index) =>(
             <div className='flex flex-col justify-center lg:gap-4 gap-2 lg:px-20 ' key={index}>
                 <div className='rounded-full w-[140px] h-[140px] cursor-pointer overflow-hidden flex'>
